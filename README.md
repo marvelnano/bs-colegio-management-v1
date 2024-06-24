@@ -28,11 +28,13 @@ Para la correcta configuración del servicio, se recomienda usar las configuraci
 
 ### Servicio Cursos
 
+`bs-course-management-v1`
 Este microservicio funciona de forma autónoma y no requiere configuraciones adicionales.
 
 ### Servicio Alumnos
 
-Este microservicio realiza llamadas HTTP al Servicio Car.
+`bs-student-management-v1`
+Este microservicio realiza llamadas HTTP al Servicio Cursos.
 
 ### Servicio de Mensajería (query-logs)
 
