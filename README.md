@@ -1,6 +1,6 @@
 # bs-colegio-management-v1
 
-_Repositorio de Proyecto de colegio (incluye microservicios de alumnos, cursos y profesores)_
+_Repositorio de proyecto de colegio (incluye microservicios de alumnos, cursos y profesores)_
 
 
 
@@ -17,7 +17,7 @@ Este proyecto utiliza Java 17 con Spring Boot 3.3.0 y está compuesto por tres m
 ## Requisitos
 
 - Java 17
-- Springboot
+- Spring Boot 3.3.0
 - Maven
 - ActiveMQ
 - Postgres
