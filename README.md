@@ -8,7 +8,7 @@ _Repositorio de Proyecto de colegio (incluye microservicios de alumnos, cursos y
 
 # School-Microservices
 
-Este proyecto utiliza Java 17 con Spring Boot 3.2.5 y está compuesto por tres microservicios:
+Este proyecto utiliza Java 17 con Spring Boot 3.3.0 y está compuesto por tres microservicios:
 
 1. **Servicio Cursos**: Un microservicio autónomo que realiza sus propias tareas.
 2. **Servicio Alumnos**: Un microservicio que consume el Servicio Cursos a través de HTTP.
