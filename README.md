@@ -1,4 +1,4 @@
-# Colegio
+# bs-colegio-management-v1
 
 _Repositorio de Proyecto de colegio (incluye microservicios de usuarios o alumnos, cursos y profesores)_
 
