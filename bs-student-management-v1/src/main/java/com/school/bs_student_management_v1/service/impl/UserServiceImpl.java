@@ -91,25 +91,25 @@ public class UserServiceImpl implements UserService {
     @Override
     public RespuestaCreadoExito deleteUser(Long idUser){
         RespuestaCreadoExito response = null;
-        UserEntity user = userRepository.findById(idUser).orElse(null);
+        UserEntity student = userRepository.findById(idUser).orElse(null);
 
-        if(user != null){
-            userRepository.delete(user);
+        if(student != null){
+            userRepository.delete(student);
 
             response = RespuestaCreadoExito.builder()
             .codigo(HttpStatus.OK.value())
-            .estado("Usuario eliminado")
-            .datos(user)
+            .estado("Alumno eliminado")
+            .datos(student)
             .build();
         }else{
             response = RespuestaCreadoExito.builder()
             .codigo(HttpStatus.OK.value())
-            .estado("No se pudo encontrar el usuario con el código: "+idUser)
+            .estado("No se pudo encontrar el alumno con el código: "+idUser)
             .datos(null)
             .build();
         }
 
-        log.info("User deleted: {}"+user);        
+        log.info("Student deleted: {}"+student);        
 
         return response;
     }
