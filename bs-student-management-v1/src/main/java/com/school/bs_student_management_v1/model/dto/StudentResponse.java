@@ -8,7 +8,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserResponse {
+public class StudentResponse {
 
     @JsonProperty("id")
     private Long id;

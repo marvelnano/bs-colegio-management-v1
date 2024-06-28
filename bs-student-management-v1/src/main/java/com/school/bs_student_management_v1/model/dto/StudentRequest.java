@@ -6,7 +6,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserRequest {
+public class StudentRequest {
 
     private Long id;
     private String nombres;

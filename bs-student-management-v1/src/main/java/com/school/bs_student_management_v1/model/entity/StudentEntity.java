@@ -12,7 +12,7 @@ import lombok.*;
 @Setter
 @Builder
 @ToString
-public class UserEntity implements Serializable {
+public class StudentEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
