@@ -2,7 +2,7 @@ package com.school.bs_student_management_v1.util;
 
 import java.util.List;
 
-import com.school.bs_student_management_v1.model.dto.StudentRequest;
+import com.school.bs_student_management_v1.model.dto.StudentDTO;
 import com.school.bs_student_management_v1.model.dto.StudentResponse;
 import com.school.bs_student_management_v1.model.entity.StudentEntity;
 
@@ -23,7 +23,7 @@ public class MapearStudentUtil {
 
     }
 
-    public static StudentEntity toStudentEntity(StudentRequest body) {
+    public static StudentEntity toStudentEntity(StudentDTO body) {
 
 		return StudentEntity.builder()
         .nombres(body.getNombres() != null ? body.getNombres() : null)

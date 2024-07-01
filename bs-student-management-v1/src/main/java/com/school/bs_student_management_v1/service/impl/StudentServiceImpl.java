@@ -7,7 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import com.school.bs_student_management_v1.model.dto.RespuestaCreadoExito;
-import com.school.bs_student_management_v1.model.dto.StudentRequest;
+import com.school.bs_student_management_v1.model.dto.StudentDTO;
 import com.school.bs_student_management_v1.model.dto.StudentResponse;
 import com.school.bs_student_management_v1.model.entity.StudentEntity;
 import com.school.bs_student_management_v1.repository.StudentRepository;
@@ -68,7 +68,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public RespuestaCreadoExito addStudent(StudentRequest body){
+    public RespuestaCreadoExito addStudent(StudentDTO body){
         RespuestaCreadoExito response = null;
         StudentEntity student = null;
 
@@ -86,7 +86,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public RespuestaCreadoExito updateStudent(Long idStudent, StudentRequest body){
+    public RespuestaCreadoExito updateStudent(Long idStudent, StudentDTO body){
         RespuestaCreadoExito response = null;
         StudentEntity student = null;        
 

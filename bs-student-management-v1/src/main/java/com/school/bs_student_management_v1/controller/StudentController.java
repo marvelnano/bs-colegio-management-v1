@@ -1,51 +1,47 @@
 package com.school.bs_student_management_v1.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PutMapping;
+
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import com.school.bs_student_management_v1.model.dto.RespuestaCreadoExito;
-import com.school.bs_student_management_v1.model.dto.StudentRequest;
+import com.school.bs_student_management_v1.model.dto.StudentDTO;
 import com.school.bs_student_management_v1.service.StudentService;
-
-import org.springframework.web.bind.annotation.PathVariable;
-
-
 
 
 @RestController
-@RequestMapping("api")
-public class StudentController {
+/*@RequestMapping("api")
+@Tag(name = "Student", description = "Controller for Student")*/
+public class StudentController implements StudentControllerApi {
 
     @Autowired
     StudentService studentService;
 
-    @GetMapping("/v1/students")
-    RespuestaCreadoExito getAllStudents() {
+    @Override
+    public RespuestaCreadoExito getAllStudents() {
         return studentService.getAllStudents();
     }
 
-    @GetMapping("/v1/students/{id}")
-    RespuestaCreadoExito getByStudent(@PathVariable("id") Long idStudent) {        
+    @Override
+    public RespuestaCreadoExito getByStudent(@PathVariable("id") Long idStudent) {        
         return studentService.getByStudent(idStudent);
-    }
-    
+    }    
 
-    @PostMapping("/v1/students")
-    RespuestaCreadoExito addStudent(@RequestBody StudentRequest studentRequest) {        
-        return studentService.addStudent(studentRequest);
-    }
-
-    @PutMapping("/v1/students/{id}")
-    RespuestaCreadoExito updateStudent(@PathVariable("id") Long idStudent,
-        @RequestBody StudentRequest studentRequest) {        
-        return studentService.updateStudent(idStudent, studentRequest);
+    @Override
+    public RespuestaCreadoExito addStudent(@RequestBody StudentDTO studentDTO) {        
+        return studentService.addStudent(studentDTO);
     }
 
-    @DeleteMapping("/v1/students/{id}")
-    RespuestaCreadoExito deleteStudent(@PathVariable("id") Long idStudent) {        
+    @Override
+    public RespuestaCreadoExito updateStudent(@PathVariable("id") Long idStudent,
+        @RequestBody StudentDTO studentDTO) {        
+        return studentService.updateStudent(idStudent, studentDTO);
+    }
+
+    @Override
+    public RespuestaCreadoExito deleteStudent(@PathVariable("id") Long idStudent) {        
         return studentService.deleteStudent(idStudent);
     }
         
