@@ -9,6 +9,7 @@ import lombok.*;
 public class StudentRequest {
 
     private Long id;
+    private Long idCurso;
     private String nombres;
     private String apellidos;
     private Long edad;

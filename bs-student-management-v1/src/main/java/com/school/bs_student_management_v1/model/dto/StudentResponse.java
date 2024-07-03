@@ -13,6 +13,9 @@ public class StudentResponse {
     @JsonProperty("id")
     private Long id;
 
+    @JsonProperty("idCurso")
+    private Long idCurso;
+
     @JsonProperty("nombres")
     private String nombres;
 

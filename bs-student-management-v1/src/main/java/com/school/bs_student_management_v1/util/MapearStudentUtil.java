@@ -16,6 +16,7 @@ public class MapearStudentUtil {
         
         return users.stream().map(l -> StudentResponse.builder()
             .id(l.getId())
+            .idCurso(l.getIdCurso())
             .nombres(l.getNombres())
             .apellidos(l.getApellidos())
             .edad(l.getEdad())
@@ -27,6 +28,7 @@ public class MapearStudentUtil {
     public static StudentEntity toStudentEntity(StudentDTO body) {
 
 		return StudentEntity.builder()
+        .idCurso(body.getIdCurso() != null ? body.getIdCurso() : null)
         .nombres(body.getNombres() != null ? body.getNombres() : null)
         .apellidos(body.getApellidos() != null ? body.getApellidos() : null)
         .edad(body.getEdad() != null ? body.getEdad() : null)

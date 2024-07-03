@@ -8,6 +8,7 @@ import lombok.*;
 @Builder
 public class StudentDTO {
 
+    private Long idCurso;
     private String nombres;
     private String apellidos;
     private Long edad;

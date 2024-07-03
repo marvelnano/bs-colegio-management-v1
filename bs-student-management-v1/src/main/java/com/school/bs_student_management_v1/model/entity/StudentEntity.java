@@ -20,6 +20,9 @@ public class StudentEntity implements Serializable {
     @Column(name = "id_student", nullable = false)
     private Long id;
 
+    @Column(name = "id_course", nullable = false)
+    private Long idCurso;
+
     private String nombres;
     private String apellidos;
     private Long edad;
