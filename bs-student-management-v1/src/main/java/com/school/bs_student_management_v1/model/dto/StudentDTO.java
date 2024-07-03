@@ -11,5 +11,6 @@ public class StudentDTO {
     private String nombres;
     private String apellidos;
     private Long edad;
+    private String email;
 
 }

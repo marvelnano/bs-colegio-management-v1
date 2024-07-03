@@ -18,7 +18,8 @@ public class MapearStudentUtil {
             .id(l.getId())
             .nombres(l.getNombres())
             .apellidos(l.getApellidos())
-            .edad(l.getEdad()).build())
+            .edad(l.getEdad())
+            .email(l.getEmail()).build())
         .toList();
 
     }
@@ -29,6 +30,7 @@ public class MapearStudentUtil {
         .nombres(body.getNombres() != null ? body.getNombres() : null)
         .apellidos(body.getApellidos() != null ? body.getApellidos() : null)
         .edad(body.getEdad() != null ? body.getEdad() : null)
+        .email(body.getEmail() != null ? body.getEmail() : null)
         .build();
         
 	}

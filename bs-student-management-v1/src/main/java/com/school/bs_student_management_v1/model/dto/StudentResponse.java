@@ -21,5 +21,8 @@ public class StudentResponse {
 
     @JsonProperty("edad")
     private Long edad;
+
+    @JsonProperty("email")
+    private String email;
     
 }

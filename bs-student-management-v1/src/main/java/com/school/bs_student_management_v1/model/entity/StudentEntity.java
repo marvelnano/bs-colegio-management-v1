@@ -1,6 +1,7 @@
 package com.school.bs_student_management_v1.model.entity;
 
 import java.io.Serializable;
+
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -16,11 +17,13 @@ public class StudentEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_student", nullable = false)
     private Long id;
 
     private String nombres;
     private String apellidos;
     private Long edad;
+    private String email;
 
     private static final long serialVersionUID = 6690689988058914671L;
     
