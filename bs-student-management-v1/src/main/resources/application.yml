@@ -1,6 +1,6 @@
 ## application.properties para microservicio student-service
 spring.application.name: bs-student-management-v1
-server.port: 8080
+server.port: 8082
 
 
 spring.h2.console.enabled: true
