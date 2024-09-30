@@ -1,0 +1,19 @@
+## application.properties para microservicio student-service
+server:
+    port: 8083
+
+spring:
+    application:
+        name: bs-course-management-v1
+    datasource:
+        driverClassName: org.postgresql.Driver
+        url: jdbc:postgresql://localhost:5432/coursesDb        
+        username: admin
+        password: 
+    jpa:
+        hibernate:
+            ddl-auto: create
+        database: postgresql
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+        defer-datasource-initialization: true
+    

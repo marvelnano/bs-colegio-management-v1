@@ -1,8 +1,10 @@
 DROP TABLE IF EXISTS students;
 
 CREATE TABLE students (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nombres VARCHAR(255),
-    apellidos VARCHAR(255),
-    edad BIGINT
+    id_student INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    id_course INT NOT NULL,
+    nombres VARCHAR(50),
+    apellidos VARCHAR(150),
+    edad INT,
+    email VARCHAR(150)
 );

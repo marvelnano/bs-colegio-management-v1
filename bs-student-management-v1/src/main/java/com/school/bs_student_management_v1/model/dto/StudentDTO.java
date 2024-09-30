@@ -6,11 +6,12 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserRequest {
+public class StudentDTO {
 
-    private Long id;
+    private Long idCurso;
     private String nombres;
     private String apellidos;
     private Long edad;
-    
+    private String email;
+
 }
