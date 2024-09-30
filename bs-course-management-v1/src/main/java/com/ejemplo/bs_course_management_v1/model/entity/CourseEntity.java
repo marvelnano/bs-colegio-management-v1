@@ -1,4 +1,4 @@
-package com.ejemplo.course_service.model.entity;
+package com.ejemplo.bs_course_management_v1.model.entity;
 
 import java.io.Serializable;
 

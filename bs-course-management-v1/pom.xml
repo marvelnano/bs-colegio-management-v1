@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ejemplo</groupId>
-	<artifactId>course-service</artifactId>
+	<artifactId>bs-course-management-v1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>course-service</name>
-	<description>Demo project for Spring Boot</description>
+	<name>bs-course-management-v1</name>
+	<description>bs-course-management-v1 - API BS - Proyecto para la gestión de cursos</description>
 	<url/>
 	<licenses>
 		<license/>

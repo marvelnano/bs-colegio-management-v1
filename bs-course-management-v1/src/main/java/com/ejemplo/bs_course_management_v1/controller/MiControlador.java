@@ -1,4 +1,4 @@
-package com.ejemplo.course_service.controller;
+package com.ejemplo.bs_course_management_v1.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
